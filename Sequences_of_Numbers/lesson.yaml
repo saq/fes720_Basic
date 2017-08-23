@@ -20,7 +20,7 @@
 
 - Class: text
   Output: That gave us every integer between (and including) 1 and 20 (an integer is a 
-    positive of negative counting number, including 0).
+    positive or negative counting number, including 0).
   
 - Class: cmd_question  
   Output: We could also use it to create a sequence of real numbers (a real number is a positive, 
@@ -37,7 +37,7 @@
     in our sequence would be greater than 10.
     
 - Class: cmd_question
-  Output: Note also that pi is one of the few constants but in to R. Type ?pi to check the others.
+  Output: Note also that pi is one of the few constants built in to R. Type ?pi to check the others.
   CorrectAnswer: ?pi
   AnswerTests: omnitest(correctExpr='?pi')
   Hint: Enter ?pi. What other constants are predefined in R?
@@ -95,9 +95,9 @@
     much clearer.
     
 - Class: cmd_question
-  Output: For exmple, seq(from = 1, to = 20) will give the same output as seq(). Try it!
+  Output: For example, seq(from = 1, to = 20) will give the same output as seq(1, 20). Try it!
   CorrectAnswer: seq(from = 1, to = 20)
-  AnswerTests: omnitest(correctExpr=seq(from = 1, to = 20))
+  AnswerTests: omnitest(correctExpr='seq(from = 1, to = 20)')
   Hint: Remember to write out the arguments by name for seq()!
 
 - Class: cmd_question
