@@ -277,8 +277,8 @@
     R simply recycles, or repeats, 1:4 until it matches the length of LETTERS.
 
 - Class: text
-  Output: Also worth noting is that the numeric vector 1:4 gets 'coerced' into a character
-    vector by the paste() function.
+  Output: "Also worth noting is that the numeric vector 1:4 gets 'coerced' into a character
+    vector by the paste() function."
 
 - Class: text
   Output: We'll discuss coercion in another lesson, but all it really means is that the
@@ -286,9 +286,9 @@
     characters "1", "2", "3", and "4".
      
 - Class: text
-  Output: Congratulation on completing another lesson! Now you know how to create numeric,
+  Output: "Congratulation on completing another lesson! Now you know how to create numeric,
   integer, logical, and character vectors, examine their structure, and combine them together
-  in different ways. Nice work!
+  in different ways. Nice work!"
 
 - Class: mult_question
   Output: Please submit the log of this lesson to Google Forms so
