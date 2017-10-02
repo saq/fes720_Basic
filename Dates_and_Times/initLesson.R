@@ -1,3 +1,6 @@
+swirl_options(swirl_logging = TRUE)
+
+
 ### MAY END UP USING THIS AT SOME POINT... ###
 
 # Code used to create dataset
