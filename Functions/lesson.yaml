@@ -20,19 +20,19 @@
     of the function followed by parentheses: function_name()."
     
 - Class: text
-  Output: Functions require inputs or objects to do stuff to. They may also have
+  Output: "Functions require inputs or objects to do stuff to. They may also have
   options that modify the actions that are carried out on the objects. 
-  Both the objects/data and the options are called _arguments_, and there are these two
+  Both the objects/data and the options are called arguments, and there are these two
   different types. We have already used both types of arguments when we used the 
-  mean() and sum() functions previously.
+  mean() and sum() functions previously."
   
 - Class: text
-  Output: Functions also _return_ something, usually another object. This object could
+  Output: "Functions also _return_ something, usually another object. This object could
   be a single value, as in the mean() function; or it could be a list, as in the output of 
-  many statistical tests or models.
+  many statistical tests or models."
   
 - Class: text
-  Output: Let's look at a few examples.
+  Output: "Let's look at a few examples."
 
   
 - Class: cmd_question
@@ -63,12 +63,12 @@
   have done in the past."
   CorrectAnswer: mean(c(2, 4, 5, NA), na.rm = TRUE)
   AnswerTests: omnitest(correctExpr='mean(c(2, 4, 5, NA), na.rm = TRUE)')
-  Hint: "Reember that mean() has the argument na.rm?"
+  Hint: "Remember that mean() has the argument na.rm?"
   
 - Class: text
-  Ouput: OK. So, we remember that functions have two kinds of arguments, and that
+  Output: "OK. So, we remember that functions have two kinds of arguments, and that
   these arguments can have default settings. Defaults are most frequently used for 
-  the options arguments, but can also apply to data arguments too.
+  the options arguments, but can also apply to data arguments too."
 
 - Class: cmd_question
   Output: "The Sys.Date()
@@ -79,9 +79,9 @@
   Hint: "Display today's date by typing: Sys.Date()"
 
 - Class: cmd_question
-  Output: If you look at the help file for Sys.Date() and also the code, you will see that 
+  Output: "If you look at the help file for Sys.Date() and also the code, you will see that 
   there are essentially no arguments. To check the code for any function, just type the 
-  name into the Console, without the parentheses. Try that now for the Sys.Date() function.
+  name into the Console, without the parentheses. Try that now for the Sys.Date() function."
   CorrectAnswer: Sys.Date
   AnswerTests: omnitest(correctExpr='Sys.Date')
   Hint: Type the function name _without_ parentheses!
@@ -389,9 +389,10 @@
     great functions!"
 
 - Class: mult_question
-  Output: "Would you like to receive credit for completing this course on
-    Coursera.org?"
-  CorrectAnswer: NULL
-  AnswerChoices: Yes;No
-  AnswerTests: coursera_on_demand()
-  Hint: ""
+  Output: Please submit the log of this lesson to Google Forms so
+    that Simon may evaluate your progress.
+  AnswerChoices: Your wish is my command
+  CorrectAnswer: Your wish is my command
+  AnswerTests: submit_log()
+  Hint: hint
+
