@@ -97,7 +97,8 @@
 - Class: text
   Output: "What does this new list look like? Pretty similar to 'x', but with the names
   'a', 'b', and 'c' after the dollar sign for each section. You can also use the names() 
-  function to add names to the main parts of the list, as we have done with " 
+  function to add names to the main parts of the list, as we have done with matrices and
+  dataframes in the past." 
 
 - Class: text
   Output: "Ok.. so, in class we made a big deal about how lists are great because they can have 
@@ -125,7 +126,7 @@
 
 - Class: cmd_question
   Output: "How do you think we might include a list within a list? Let's begin with
-    two small lists: list(1, 2) and list(3, 4). Put these, on their own, into a list, 
+    two small lists: list(1, 2) and list(3, 4). Put these together into a list, 
     called 'z'."
   CorrectAnswer: z <- list(list(1, 2), list(3, 4))
   AnswerTests: omnitest(correctExpr='z <- list(list(1, 2), list(3, 4))')
@@ -206,6 +207,23 @@
   AnswerTests: omnitest(correctExpr='z1[["a"]]')
   Hint: 'Type: z1[["a"]]'
   
+- Class: cmd_question
+  Output: And let's double check that it is not a list with is.list().
+  CorrectAnswer: is.list(z1[["a"]])
+  AnswerTests: omnitest(correctExpr='is.list(z1[["a"]])')
+  Hint: 'Type: is.list(z1[["a"]])'
+  
+- Class: cmd_question
+  Output: Nope, not a list! What is it? Use str() to find out.
+  CorrectAnswer: str(z1[["a"]])
+  AnswerTests: omnitest(correctExpr='str(z1[["a"]])')
+  Hint: 'Type: str(z1[["a"]])'
+  
+- Class: text
+  Output: "So, it is a numeric vector. Remember that the output of *single* brackets was a list. 
+    With *double* brackets, we remove one level of the list hierarchy, so in this case we end
+    up with a vector."
+  
 - Class: text
   Output: "As usual, you can use names or position to subset using double brackets."
   
@@ -213,7 +231,7 @@
   Output: "Now we come to the last way to subset out parts of a list: The $!."
 
 - Class: cmd_question
-  Output: "The dollar sign works exxactly like double brackets, except that quotes around the
+  Output: "The dollar sign works exactly like double brackets, except that quotes around the
     name are not needed. Try subsetting out part 'a' using '$'."
   CorrectAnswer: z1$a
   AnswerTests: omnitest(correctExpr='z1$a')
