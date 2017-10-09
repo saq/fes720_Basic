@@ -39,13 +39,13 @@
 - Class: text
   Output: "There is a clear difference between the vector and the list. The vector displays the
    three numbers on a single line; these are all in one vector with three elements. The list is showing
-   a very different structure. First, it has three sections identified by double brackets ([[i]]), each 
-   followed by a single number with single brackets ([i]). What do these mean?"
+   a very different structure. First, it has three sections identified by double brackets [[i]], each 
+   followed by a single number with single brackets [i]. What do these mean?"
    
 - Class: text
   Output: "As usual, single brackets indicate element position. Thus, in the first vector, there are 
-    three elements, and the first element is 1. In the list, there are three sections ([[1]], [[2]], 
-    and [[3]]), and each has a different
+    three elements, and the first element is 1. In the list, there are three sections [[1]], [[2]], 
+    and [[3]], and each has a different
     first element, 1, 2, or 3, depending on which part of the list you look at."
   
 - Class: text
@@ -67,7 +67,7 @@
 
 - Class: text
   Output: "Using str() is a bit more useful that just displaying the raw list itself. Here
-    you can see there it is, really, a list, with three parts. Further, we are told what 
+    you can see that it is, really, a list, with three parts. Further, we are told what 
     kind of data each part is (all three are numeric in this case), as well as a summary
     of what is in each part (a single integer in each)."
 
@@ -91,7 +91,7 @@
 - Class: cmd_question
   Output: "Ok, so now display the structure of the new named list, x_named'"
   CorrectAnswer: str(x_named)
-  AnswerTests: omnitest(correctExpr='x_named')
+  AnswerTests: omnitest(correctExpr='str(x_named)')
   Hint: "Remember str()?"
 
 - Class: text
