@@ -115,7 +115,7 @@
 - Class: cmd_question
   Output: "Great. Now, let's look at this list ... what is the structure?"
   CorrectAnswer: str(y)
-  AnswerTests: omnitest(correctExpr='y')
+  AnswerTests: omnitest(correctExpr='str(y)')
   Hint: "Remember str()?"
   
 - Class: text
@@ -135,7 +135,7 @@
 - Class: cmd_question
   Output: "We can see the structure of 'z' with the str() function."
   CorrectAnswer: str(z)
-  AnswerTests: omnitest(correctExpr='z')
+  AnswerTests: omnitest(correctExpr='str(z)')
   Hint: "Remember str()?"
   
 - Class: text
@@ -160,7 +160,7 @@
 - Class: cmd_question
   Output: "And, just for kicks, take a look at the structure..."
   CorrectAnswer: str(z1)
-  AnswerTests: omnitest(correctExpr='z1')
+  AnswerTests: omnitest(correctExpr='str(z1)')
   Hint: "Remember str()?"
   
 - Class: text
